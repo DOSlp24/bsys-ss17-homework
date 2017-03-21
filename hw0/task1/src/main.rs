@@ -1,7 +1,20 @@
 //! hw0 - task1
 //!
-//! Introdcution to Rust and Cargo
+//! First task! outputs given name the given amount of times!
+
+pub fn multiple_hello(name: &str, n: i32){
+	let mut i = 0;
+	let mut done = false;
+	while !done {
+		println!("Hello, {}!", name);
+		i += 1;
+		if i==n {
+			done = true;
+		}
+		
+	}
+}
 
 fn main() {
-    println!("Hello, world!");
+    multiple_hello("Ferris", 2);
 }
